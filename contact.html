@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="utf-8">
+        <title>Simple Website</title>
+        <link rel= "stylesheet" href = "style.css" type = "text/css" />
+    </head>
+
+    <body>
+        <header>
+            <div class = "topnav">
+                <a href = "index.html">Home</a>
+                <a href = "gallery.html">Image gallery</a>
+                <a href = "task.html">This task</a>
+                <a class = "active" href = "contact.html">Contact</a>
+                <a href = "colors.html">Colors</a>
+            </div>
+
+            <div class = "content">
+                <div class = "box">
+                    <h1>CONTACT</h1>
+                </div>
+                <div class = "west_contact">
+                <form name = "my_form">
+                    <div class = "form_entry">
+                        <div class = "col-40">
+                            <label for= "name">Full name: </label>
+                        </div>
+                        <div class = "col-80">
+                            <input type = "text" id="name" oninput = validateName()  onkeyup = validate(this) name = "name" placeholder= "Full name in capital letters" required>
+                        </div>
+                        <div class = "col-80-Inf">
+                            <p id="demoN"></p>
+                        </div>
+                    </div>
+                    <div class = "form_entry">
+                        <div class = "col-40">
+                            <label for= "email">E-mail: </label>
+                        </div>
+                        <div class = "col-80">
+                            <input type = "email" id="email" oninput = validateEmail() onkeyup = validate(this) name = "name" placeholder= "Give your email" required>
+                        </div>
+                        <div class = "col-80-Inf">
+                            <p id="demoE"></p>
+                        </div>
+                    </div>
+                    <div class = "form_entry">
+                        <div class = "col-40">
+                            <label for= "msg">Message: </label>
+                        </div>
+                        <div class = "col-80">
+                            <textarea id = "msg" name = "msg" onkeyup = validate(this) placeholder = "Write a message!" required></textarea>
+                        </div>
+                    </div>
+                    </form>
+                    <div class = "form_entry">
+                        <div class = "col-80">
+                            <input type="submit" id = "SubmitButton" value="SEND" disabled onclick="btn_click()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class = "east_contact">
+                    <img src = "img/contact.jpg" alt = "contact" width = "280" height = "240">
+                </div>
+                <div style = "clear: both;"></div>
+        </header>
+
+        <script src="app.js"></script>
+
+        <footer class = "footer">
+            <p>Wszelkie prawa zastrzeżone 2020 &copy; Author: Karolina Mięsowicz <br/> Dziękuję za wizytę! <a href="contact.html">Contact with me</a></p>
+        </footer>
+    </body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="utf-8">
+        <title>Simple Website</title>
+        <link rel= "stylesheet" href = "style.css" type = "text/css" />
+    </head>
+
+    <body>
+        <header>
+            <div class = "topnav">
+                <nav id = "topnav">
+                    <a href = "index.html">Home</a>
+                    <a href = "gallery.html">Image gallery</a>
+                    <a class = "active" href = "task.html">This task</a>
+                    <a href = "contact.html">Contact</a>
+                    <a href = "colors.html">Colors</a>
+                </nav>
+            </div>
+
+            <div class = "content">
+                <div class = "box">
+                    <h1>This task - description</h1>
+                </div>
+                <div class = "container">
+                <div class = "west">
+                    <img src = "img/motorola-logo.png" alt = "motorola" width = "320" height = "320">
+                </div>
+                <div class = "east">
+                    <h4>Title: </h4><h2> BUILD A SIMPLE WEBSITE </h2> <br/>
+                    <h4>Creation date: </h4><h3> 13.11.2002 - 16.11.2020 </h3> <br/>
+                    <h4>Path: </h4><h3>FRONT-END</h3><br/> 
+                    <h4>The main requirements from the instruction: </h4><br/>
+                    <ul>
+                        <li>The page should contain at least 4 subpages.</li>
+                        <li>Its html should be W3C valid.</li>
+                        <li>It should contain properly used HTML5 elements.</li>
+                        <li>It should contain a navigation menu.</li>
+                        <li>It should contain a contact page with a form to send email to the author(without server-side logic).</li>
+                        <li>Optional: The contct page should have validation written in JavaScript using regular expressions.</li>
+                        <li>Optional: It should contain a welcome screening which displays an animation.</li>
+                    </ul><br/>
+                </div>
+                <div class = "west">
+                    <img src = "img/descript.jpg" alt = "description" width = "320" height = "240">
+                </div>
+                <div class = "east">
+                    <h2>And now some description about my website - appearance and operation!</h2><br/>
+                    <h4>First of all</h4><p> - welcome screening with displays an animation. It is two different solutions - <a href = "index.html">Home</a> page and <a href = "gallery.html">Gallery</a> welcome screenings. </p><br/>
+                    <h4>Second of all</h4><p> - each images are with proper usage rights. I have find commercial use photos and graphics on the PIXABAY website or in email footer (Motorola logo).</p><br/>
+                </div>
+                <div class = "west">
+                    <img src = "img/agree.jpg" alt = "agree" width = "320" height = "240">
+                </div>
+                <div class = "east">
+                    <h2>Form validation:</h2>
+                    <h4>It is important to notice validation of the form fields.</h4><br/>
+                    <h3>Input Name</h3><p>Not empty and does not contain only whitespace characters. Should contains only letters and space and each word in it starts with capital letters. Should be written at least two words.</p>
+                    <p> Invalid name- red inscription about it.</p>
+                </div>
+                <div class = "west">
+                    <img src = "img/agree2.jpg" alt = "agree2" width = "320" height = "200">
+                </div>
+                <div class = "east">
+                    <h2>Form validation:</h2>
+                    <h3>Input Email</h3><p>Not empty and does not contain only whitespace characters. Should contains valid email address (aaa@aa.aa).</p>
+                    <p> Invalid email- red inscription about it.</p><br/>
+                    <h3>Input Message</h3><p>Valid if not empty.</p>
+                </div>
+                <div class = "west">
+                    <img src = "img/send_msg.jpg" alt = "send_msg" width = "320" height = "200">
+                </div>
+                <div class = "east">
+                    <h2>Form validation:</h2>
+                    <h3>Submit Button - SEND</h3><p>Disabled by default. Enable after valid completion of the form.</p><br/>
+                    <p>After clicking SEND - an alert with written name and information that the message has been sent will be displayed. Then, each field is cleared.</p>
+                </div>
+                <div style = "clear: both;"><br/></div>
+                </div>
+                <div class="box_colors" style="background-color: lightgoldenrodyellow;">
+                    <br/><h2 style="text-decoration: underline;">More achievements: </h2><br/><br/>
+                    <h3>Every image has hover effect.</h3><br/>
+                    <h4>At Home page text includes links to proper subpages - as same as here. </h4><a href = "index.html">Try it!</a><br/><br/>
+                    <h4>My custom content on Colors subpage is about different hex code of colors. Table with some color, their name and hex code.</h4><a href = "colors.html">Go to Colors!</a><br/><br/>
+                    <h4>Image Gallery subpage includes some image with insription which tell more about me.</h4><a href = "gallery.html">Go to Gallery!</a><br/><br/>
+                    <h4>Contact subpage includes form - user could write here a message and send it to me.</h4><a href = "contact.html">Go to Form!</a><br/><br/>
+                    <h3>Everything in this subpages should show different type and opportunity of solution using web core HTML, CSS and JavaScipt. </h3><br/>
+                    <h2 style="text-decoration: underline;">That was my intention!</h2><br/><br/>
+                </div>
+                </div>
+        </header>
+
+        <script src="app.js"></script>
+
+        <footer class = "footer">
+            <p>Wszelkie prawa zastrzeżone 2020 &copy; Author: Karolina Mięsowicz <br/> Dziękuję za wizytę! <a href="contact.html">Contact with me</a></p>
+        </footer>
+    </body>
+
+</html>
